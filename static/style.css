@@ -1,0 +1,62 @@
+
+.container{
+    max-width: 1900px ;
+    padding: -1%;
+    margin: 0 auto;
+    color: black;
+    text-transform: uppercase;
+
+   }
+
+nav{
+ background-color: white;
+    text-align: center;
+    
+
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-between;
+}
+nav ul li{
+    width: 120x;
+    margin: 15px;
+    padding: 15px;
+
+}
+nav ul li a{
+    padding: 50px  200px ;
+
+}
+
+nav .logo{
+    font-size: 35px;
+
+}
+.parallax{
+    background-image: url('imagem/Plano.png'); 
+    height: 500px;
+    background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir o elemento */
+}
+.imagem-painel{
+    width: 100px;
+    height: auto;
+   right: 200px;
+}
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+
+
+
+}
+.folhae{
+    width: 400px;
+    height: auto;
+    border-bottom: 100px;
+
+}

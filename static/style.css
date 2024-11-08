@@ -1,62 +1,132 @@
 
-.container{
-    max-width: 1900px ;
-    padding: -1%;
+/* Estilos para o container */
+/* Ajustes para a .container */
+.container {
+    max-width: 3000px;
+    padding: 1%;
     margin: 0 auto;
     color: black;
     text-transform: uppercase;
-
-   }
-
-nav{
- background-color: white;
-    text-align: center;
-    
-
+    position: relative; /* Se necessário para posicionamento da imagem */
 }
-nav ul{
-    display: inline-flex;
+
+  /* Estilos para o menu de navegação */
+nav {
+    background-color: white;
+    padding: 20px 0;  /* Adiciona espaçamento em cima e embaixo */
+}
+
+nav .logo {
+    text-align: center;  /* Centraliza a logo */
+    margin-bottom: 20px;
+}
+
+nav .titulo {
+    font-size: 1.8em;
+    text-align: center;  /* Centraliza o título */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens na navegação */
     list-style: none;
-    justify-content: space-between;
-}
-nav ul li{
-    width: 120x;
-    margin: 15px;
-    padding: 15px;
-
-}
-nav ul li a{
-    padding: 50px  200px ;
-
+    padding: 0;
+    margin: 0;
 }
 
-nav .logo{
-    font-size: 35px;
+nav ul li {
+    margin: 0 15px;  /* Espaçamento entre os links */
+}
 
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
 }
-.parallax{
-    background-image: url('imagem/Plano.png'); 
-    height: 500px;
-    background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir o elemento */
+
+nav ul li a:hover {
+    background-color: #ddd;  /* Altera o fundo ao passar o mouse */
+    color: #333;  /* Altera a cor do texto ao passar o mouse */
 }
-.imagem-painel{
+
+  /* Estilos para o logo e imagem */
+.imagem-painel {
     width: 100px;
     height: auto;
-   right: 200px;
+    display: block;
+    margin: 0 auto;
 }
-.titulo{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
 
-
-
-}
-.folhae{
+.folhae {
     width: 400px;
     height: auto;
-    border-bottom: 100px;
-
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Fundo suave */
+}
+
+  /* Contêiner do formulário */
+.form-container {
+    display: flex;
+    justify-content: center;    /* Centraliza o formulário horizontalmente */
+    align-items: flex-start;    /* Alinha o formulário ao topo */
+    position: absolute;         /* Permite posicionamento fixo em relação à tela */
+    top: 50%;                   /* Coloca o formulário um pouco abaixo do topo da página */
+    left: 50%;                  /* Centraliza o contêiner horizontalmente */
+    transform: translateX(-50%); /* Ajusta o contêiner para que ele fique no meio exato da tela */
+    width: 100%;                /* Garantimos que o contêiner ocupe toda a largura disponível */
+    max-width: 600px;           /* Limita a largura do formulário */
+    padding: 20px;
+    background-color: white;    /* Fundo branco para destacar o formulário */
+    border-radius: 10px;        /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+}
+
+  /* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: row;     /* Organiza os elementos em coluna */
+    width: 100%;                /* Faz o formulário ocupar toda a largura disponível */
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;         /* Espaço abaixo do label */
+}
+
+form input {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;        /* Espaço entre os campos */
+    border: 1px solid #ccc;    /* Borda suave para os campos */
+    border-radius: 5px;        /* Bordas arredondadas */
+    background-color: #fafafa; /* Cor de fundo leve para os campos */
+}
+
+form button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;        /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+  /* Efeito hover para o botão */
+form button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão quando o mouse passa por cima */
+}
+
